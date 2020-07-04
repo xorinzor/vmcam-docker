@@ -1,7 +1,5 @@
 FROM debian:stable-slim
 
-LABEL maintainer="jorin.vermeulen@gmail.com"
-
 #Disable interactive mode to prevent package install issues
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
